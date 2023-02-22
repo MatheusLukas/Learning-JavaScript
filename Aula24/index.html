@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const name = prompt("Informe seu nome completo!");
+
+      document.body.innerHTML += `Seu nome é ${name}  <br />`;
+      document.body.innerHTML += `Seu nome tem ${name.length} letras  <br />`;
+      document.body.innerHTML += `A segunda letra de seu nome é: ${name.charAt(
+        1
+      )} ou ${name[1]}  <br />`;
+      document.body.innerHTML += `Qual o primeiro indice da letra e do seu nome? ${name.indexOf(
+        "e"
+      )}  <br />`;
+      document.body.innerHTML += `Qual o ultimo indice da letra e do seu nome? ${name.lastIndexOf(
+        "e"
+      )} <br />`;
+      document.body.innerHTML += `As ultimas tres letras do seu nome sao ${name.slice(
+        name.length - 3,
+        name.length
+      )} <br />`;
+      document.body.innerHTML += `As palavras do seu nome são: ${name.split(
+        " "
+      )}<br />`;
+      document.body.innerHTML += `Seu nome com letra Maiuscula ${name.toUpperCase()} <br />`;
+      document.body.innerHTML += `Seu nome com letra minuscula ${name.toLowerCase()} <br />`;
+    </script>
+  </body>
+</html>
