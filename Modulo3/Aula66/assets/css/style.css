@@ -54,3 +54,42 @@ form button:hover {
 .clock {
   font-size: 3em;
 }
+
+.btn-Start {
+  background-color: green;
+  border: 1px, black, solid;
+  padding: 5px 10px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.btn-Start:hover {
+  scale: 1.2;
+  background-color: greenyellow;
+}
+
+.btn-Stop {
+  background-color: red;
+  border: 1px, black, solid;
+  padding: 5px 10px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.btn-Stop:hover {
+  scale: 1.2;
+  background-color: rgb(247, 138, 138);
+}
+
+.btn-Restart {
+  background-color: rgba(0, 115, 255, 0.553);
+  border: 1px, black, solid;
+  padding: 5px 10px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.btn-Restart:hover {
+  scale: 1.2;
+  background-color: rgba(68, 151, 253, 0.553);
+}

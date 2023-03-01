@@ -27,6 +27,11 @@ function timer() {
       minutes = 0;
       hours++;
     }
+    if (hours === 24) {
+      alert("O timer chegou no limite");
+      stop();
+      restart();
+    }
 
     clock.innerHTML = `${String(hours).padStart(2, "0")}:${String(
       minutes
@@ -53,6 +58,6 @@ function restart() {
 //   console.log(timer());
 // }, 1000);
 
-buttonStart.addEventListener("click", () => timer());
-buttonStop.addEventListener("click", () => stop());
-buttonRestart.addEventListener("click", () => restart());
+buttonStart.addEventListener("click", (e) => timer());
+buttonStop.addEventListener("click", (e) => stop());
+buttonRestart.addEventListener("click", (e) => restart());
