@@ -41,5 +41,5 @@ function* geradora4() {
 
 const g4 = egradora4();
 for (let valor of g4) {
-  console.log();
+  console.log(valor);
 }
