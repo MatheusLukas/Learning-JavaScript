@@ -45,7 +45,7 @@ function createCalculator() {
       //this -> é a calculadora
       addEventListener("click", (e) => {
         const element = e.target;
-        console.log(element.classList);
+        // console.log(element.classList);
 
         if (element.classList.contains("btn-number")) {
           this.btnForDisplay(element.innerText);
@@ -70,6 +70,6 @@ function createCalculator() {
 
 const calculator = createCalculator();
 calculator.start();
-calculator.clickButtons();
+// calculator.clickButtons();
 // console.log(calculator, calculator.start());
 // console.log(calculator.clickButtons());
